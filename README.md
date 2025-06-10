@@ -39,7 +39,7 @@ The voltage error (difference between simulated and actual voltage) is a key met
 
 ## Instructions for the code
 
-First the 95 km case should be on the Downloads folder and it should be renamed as 95k_km_case. The working directory of the code is Downloads folder, it reads profile data for Discharge and WLTP cycle. 
+First the 95 km case should be in the Downloads folder and it should be renamed as 95k_km_case. The working directory of the code is Downloads folder, it reads profile data for Discharge and WLTP cycle from Downloads, the hppc data is read from 95k_km_case folder. 
 
 The libraries used and their versions are given in [requirements.txt](requirements.txt),
 
