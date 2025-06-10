@@ -44,8 +44,8 @@ First the 95 km case should be on the Downloads folder and it should be renamed 
 The libraries used and their versions are given in requirements.txt,
 
 run_wo_plots.py file runs on terminal provided that above conditions are met. It prints out parameter mapping and validation plots. 
-Case_Study_case95k_wResults.html is the report of the code that was created as a jupyter notebook
-Case_Study_case95k_wresults.ipynb is the Jupyter notebook with results
+[Case_Study_case95k_wResults.html] is the report of the code that was created as a jupyter notebook
+[Case_Study_case95k_wresults.ipynb] is the Jupyter notebook with results
 Case_Study_case95k_clean.ipynb is the clean version without the results.
 
 
