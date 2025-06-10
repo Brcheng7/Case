@@ -49,7 +49,7 @@ The libraries used and their versions are given in [requirements.txt](requiremen
 
 [Case_Study_case95k_wresults.ipynb](Case_Study_case95k_wresults.ipynb) is the Jupyter notebook with results.
 
-[Case_Study_case95k_clean.ipynb] (Case_Study_case95k_clean.ipynb) is the clean version without the results.
+[Case_Study_case95k_clean.ipynb](Case_Study_case95k_clean.ipynb) is the clean version without the results.
 
 
 
