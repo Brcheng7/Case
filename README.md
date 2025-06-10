@@ -28,7 +28,7 @@ WLTP Cycle: To evaluate performance under a realistic driving profile.
 
 The voltage error (difference between simulated and actual voltage) is a key metric for validation.
 
-Key takeaways:
+## Key takeaways:
 - The timesteps were not consisted in the test datas so segmentation was required
 - some pulses were not used due to not having constant current or not enough magnitude
 - charge and discharge parameters were separated since they showed different trends
