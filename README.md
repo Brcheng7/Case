@@ -14,7 +14,7 @@ Then OCV to SoC mapping was done using cubic interpolation.
 
 Parameter Fitting:
 
-Curvefit of scipy is used to fit relaxation data to the second-order ECM model. From OCV values SoC mapping was performed to find SoC-dependent Parameter fitting. Moving average was used to smooth the parameters wrt SoC.
+Curvefit of scipy is used to fit relaxation data to the second-order ECM model. From OCV values, SoC mapping was performed to find SoC-dependent Parameter fitting. Moving average was used to smooth the parameters wrt SoC.
 
 Model Validation:
 
@@ -29,23 +29,23 @@ WLTP Cycle: To evaluate performance under a realistic driving profile.
 The voltage error (difference between simulated and actual voltage) is a key metric for validation.
 
 ## Key takeaways:
-- The timesteps were not consisted in the test datas so segmentation was required
-- some pulses were not used due to not having constant current or not enough magnitude
-- charge and discharge parameters were separated since they showed different trends
-- moving average was applied to parameters
-- the validation was not satisfactory but the trends for WLTP cycle was captured, which show promise since real case seneraio is very dynamic.
+- The timesteps were not consistent in the test data, so segmentation was required
+- Some pulses were not used due to not having a constant current or not enough magnitude
+- Charge and discharge parameters were separated since they showed different trends
+- A moving average was applied to smooth out parameter change wrt SoC
+- The validation was not satisfactory, but the trends for WLTP cycle were captured, which show promise since the real case scenario -car driving- is very dynamic.
 - R0 parameter estimation probably has the biggest error since the voltage drop during a pulse is not very well captured.
 
 
 ## Instructions for the code
 
-First the 95 km case should be in the Downloads folder and it should be renamed as 95k_km_case. The working directory of the code is Downloads folder, it reads profile data for Discharge and WLTP cycle from Downloads, the hppc data is read from 95k_km_case folder. 
+First, the 95 km case should be in the Downloads folder and it should be renamed as 95k_km_case. The working directory of the scripts is the Downloads folder, it reads profile data for Discharge and WLTP cycle from Downloads, and the hppc data is read from 95k_km_case folder. 
 
 The libraries used and their versions are given in [requirements.txt](requirements.txt),
 
-[run_wo_plots.py](run_wo_plots.py) file runs on terminal provided that above conditions are met. It prints out parameter mapping and validation plots. 
+[run_wo_plots.py](run_wo_plots.py) file runs on the terminal provided that the above conditions are met. It prints out parameter mapping and validation plots. 
 
-[Case_Study_case95k_wResults.html](Case_Study_case95k_wResults.html) is the report of the code that was created as a jupyter notebook.
+[Case_Study_case95k_wResults.html](Case_Study_case95k_wResults.html) is the report of the code that was created as a Jupyter notebook.
 
 [Case_Study_case95k_wresults.ipynb](Case_Study_case95k_wresults.ipynb) is the Jupyter notebook with results.
 
